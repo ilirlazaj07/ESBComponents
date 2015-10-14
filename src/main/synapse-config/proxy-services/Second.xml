@@ -8,6 +8,9 @@
                     <http method="get" uri-template="http://localhost:8080/restTEST/rest/persone/"/>
                 </endpoint>
             </call>
+            <log level="custom" separator="###">
+                <property name="HTTP_QUERY" expression="get-property('axis2', 'HTTP_SC')"/>
+            </log>
             <enrich>
                 <source type="body" clone="true"/>
                 <target type="property" action="child" property="body_of_first_call"/>
