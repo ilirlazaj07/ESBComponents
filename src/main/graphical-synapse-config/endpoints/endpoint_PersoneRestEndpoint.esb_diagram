@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:esb="http:///org/wso2/developerstudio/eclipse/gmf/esb" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_tmnuAHJvEeWhmbs5fUYUBg" type="Esb" name="endpoint_PersoneRestEndpoint.esb_diagram" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="_ttdV0HJvEeWhmbs5fUYUBg" type="2001">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ttdV1XJvEeWhmbs5fUYUBg" type="7001"/>
+    <children xmi:type="notation:Shape" xmi:id="_9KfEgHJvEeWhmbs5fUYUBg" type="3642" fontName="Sans">
+      <children xmi:type="notation:BasicCompartment" xmi:id="_9KfrkHJvEeWhmbs5fUYUBg" type="7041">
+        <children xmi:type="notation:Node" xmi:id="_jdJuMHJwEeWhmbs5fUYUBg" type="3712">
+          <styles xmi:type="notation:DescriptionStyle" xmi:id="_jdJuMXJwEeWhmbs5fUYUBg"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_jdJuMnJwEeWhmbs5fUYUBg" fontName="Sans"/>
+          <styles xmi:type="notation:LineStyle" xmi:id="_jdJuM3JwEeWhmbs5fUYUBg"/>
+          <element xmi:type="esb:HTTPEndpoint" href="endpoint_PersoneRestEndpoint.esb#//@server/@children.0/@child"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_jdJuNHJwEeWhmbs5fUYUBg" x="8" y="-6"/>
+        </children>
+        <styles xmi:type="notation:TitleStyle" xmi:id="_9KfrkXJvEeWhmbs5fUYUBg" showTitle="true"/>
+      </children>
+      <element xmi:type="esb:EndpointDiagram" href="endpoint_PersoneRestEndpoint.esb#//@server/@children.0"/>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_9KfEgXJvEeWhmbs5fUYUBg" width="123" height="100"/>
+    </children>
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_ttdV0XJvEeWhmbs5fUYUBg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_ttdV0nJvEeWhmbs5fUYUBg" fontName="Sans"/>
+    <styles xmi:type="notation:LineStyle" xmi:id="_ttdV03JvEeWhmbs5fUYUBg"/>
+    <element xmi:type="esb:EsbServer" href="endpoint_PersoneRestEndpoint.esb#//@server"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ttdV1HJvEeWhmbs5fUYUBg"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_tmnuAXJvEeWhmbs5fUYUBg"/>
+  <element xmi:type="esb:EsbDiagram" href="endpoint_PersoneRestEndpoint.esb#/"/>
+</notation:Diagram>

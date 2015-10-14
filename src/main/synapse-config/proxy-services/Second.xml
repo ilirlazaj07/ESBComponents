@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="Second" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <log/>
+            <call>
+                <endpoint key="PersoneRestEndpoint"/>
+            </call>
+            <enrich>
+                <source type="body" clone="true"/>
+                <target type="property" action="child" property="body_of_first_call"/>
+            </enrich>
+            <filter source="get-property('axis2', 'HTTP_SC')" regex="200">
+                <then>
+                    <log level="custom" separator=",">
+                        <property name="property_name" value="successo"/>
+                    </log>
+                </then>
+                <else>
+                    <log level="custom" separator=",">
+                        <property name="property_name" value="errore"/>
+                    </log>
+                </else>
+            </filter>
+            <log level="custom" separator="###">
+                <property name="property_name" expression="get-property('body_of_first_call')"/>
+            </log>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>

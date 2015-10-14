@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<proxy xmlns="http://ws.apache.org/ns/synapse" name="Prime" transports="http https" startOnLoad="true" trace="disable">
+    <target>
+        <inSequence>
+            <property name="property_name" value="value" scope="default" type="STRING"/>
+            <clone continueParent="true" id="PrimeClone" sequential="true">
+                <target sequence="CloneSequence"/>
+            </clone>
+            <loopback/>
+        </inSequence>
+        <outSequence>
+            <send/>
+        </outSequence>
+        <faultSequence/>
+    </target>
+</proxy>
