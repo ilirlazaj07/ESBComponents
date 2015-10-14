@@ -4,7 +4,9 @@
         <inSequence>
             <log/>
             <call>
-                <endpoint key="PersoneRestEndpoint"/>
+                <endpoint>
+                    <http method="get" uri-template="http://localhost:8080/restTEST/rest/persone/"/>
+                </endpoint>
             </call>
             <enrich>
                 <source type="body" clone="true"/>
